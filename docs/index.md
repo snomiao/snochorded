@@ -1,4 +1,12 @@
-# 雪星并击 | snochorded
+# 雪星并击 | snochorded | sno-chord-typing
+
+## 链接
+
+源码：
+https://github.com/snomiao/sno-chord-typing/
+
+在线体验：
+https://snomiao.github.io/sno-chord-typing/
 
 ## 编码规则
 
@@ -32,13 +40,15 @@
 
 ## 来点例子：
 
-英文：
+### 英文：`hello, world.`
 |||||||
 |-|-|-|-|-|-|
-`dfio`=>`he` | `adl`=>`ll` | `qe, `=>`o, ` | `wo`=>`wo` | `rl`=>`rl` | `d.`=>`d.`
-=> `hello, world.`
+| `dfio`=>`he` | `adl`=>`ll` | `qe, `=>`o, ` | `wo`=>`wo` | `rl`=>`rl` | `d.`=>`d.`
+| `he`| `ll`| `o, `| `wo`| `rl`| `d.` |
 
-微软双拼：
+
+### 微软双拼：`我可以请你吃你喜欢的大餐，我可以陪你随处玩耍。`
+
 |||||||||||||||||||||||||
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |并击|`wo`|`sdio`|`eri`|`q;`|`cvi`|`wei`|`cvi`|`xi`|`dfuo`|`dio`|`dl;`|`cj`|`,`|`wo`|`sdio`|`eri`|`qw/.`|`cvi`|`s.m`|`weu`|`wj`|`wrip`|
@@ -47,16 +57,12 @@
 
 ## 尝试与练习：
 
-在此输入：
+在此输入（目前只支持英文）：
 
 <div class="snochorded">
 <div><textarea  style="min-width:50%;min-height:10em"></textarea></div>
 当前按下：<span></span>
 </div>
-
-## 软件下载
-
-见： https://github.com/snomiao/snochorded/
 
 
 <script>
