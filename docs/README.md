@@ -1,12 +1,16 @@
-# 雪星并击 | snochorded
+# 雪星并击 | snochorded | sno-chord-typing
 
 ## 链接
 
+
 源码：
-https://github.com/snomiao/sno-chord-typing/
+https://github.com/snomiao/snochorded/
 
 在线体验：
-https://snomiao.github.io/sno-chord-typing/
+https://snomiao.github.io/snochorded/
+
+软件下载：（目前支持 Windows）
+https://github.com/snomiao/snochorded/releases/
 
 ## 编码规则
 
