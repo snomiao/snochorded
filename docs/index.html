@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>雪星并击 | snochorded</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="雪星并击--snochorded">雪星并击 | snochorded</h1>
+<h2 id="编码规则">编码规则</h2>
+<p>规则解读：<code>同时按下 =&gt; 输出</code></p>
+<h3 id="左手编码">左手编码：</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1 =&gt; 1</code></td>
+<td><code>2 =&gt; 2</code></td>
+<td><code>3 =&gt; 3</code></td>
+<td><code>4 =&gt; 4</code></td>
+<td><code>5 =&gt; 5</code></td>
+</tr>
+<tr>
+<td><code>q =&gt; q</code></td>
+<td><code>w =&gt; w</code></td>
+<td><code>e =&gt; e</code></td>
+<td><code>r =&gt; r</code></td>
+<td><code>t =&gt; t</code></td>
+</tr>
+<tr>
+<td><code>a =&gt; a</code></td>
+<td><code>s =&gt; s</code></td>
+<td><code>d =&gt; d</code></td>
+<td><code>f =&gt; f</code></td>
+<td><code>g =&gt; g</code></td>
+</tr>
+<tr>
+<td><code>z =&gt; z</code></td>
+<td><code>x =&gt; x</code></td>
+<td><code>c =&gt; c</code></td>
+<td><code>v =&gt; v</code></td>
+<td><code>b =&gt; b</code></td>
+</tr>
+<tr>
+<td><code>12 =&gt; 0</code></td>
+<td><code>13 =&gt; 9</code></td>
+<td><code>23 =&gt; 8</code></td>
+<td><code>24 =&gt; 7</code></td>
+<td><code>34 =&gt; 6</code></td>
+</tr>
+<tr>
+<td><code>qw =&gt; p</code></td>
+<td><code>qe =&gt; o</code></td>
+<td><code>we =&gt; i</code></td>
+<td><code>wr =&gt; u</code></td>
+<td><code>er =&gt; y</code></td>
+</tr>
+<tr>
+<td><code>as =&gt; ;</code></td>
+<td><code>ad =&gt; l</code></td>
+<td><code>sd =&gt; k</code></td>
+<td><code>sf =&gt; j</code></td>
+<td><code>df =&gt; h</code></td>
+</tr>
+<tr>
+<td><code>zx =&gt; /</code></td>
+<td><code>zc =&gt; .</code></td>
+<td><code>xc =&gt; ,</code></td>
+<td><code>xv =&gt; m</code></td>
+<td><code>cv =&gt; n</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="右手编码">右手编码：</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>6 =&gt; 6</code></td>
+<td><code>7 =&gt; 7</code></td>
+<td><code>8 =&gt; 8</code></td>
+<td><code>9 =&gt; 9</code></td>
+<td><code>0 =&gt; 0</code></td>
+</tr>
+<tr>
+<td><code>y =&gt; y</code></td>
+<td><code>u =&gt; u</code></td>
+<td><code>i =&gt; i</code></td>
+<td><code>o =&gt; o</code></td>
+<td><code>p =&gt; p</code></td>
+</tr>
+<tr>
+<td><code>h =&gt; h</code></td>
+<td><code>j =&gt; j</code></td>
+<td><code>k =&gt; k</code></td>
+<td><code>l =&gt; l</code></td>
+<td><code>; =&gt; ;</code></td>
+</tr>
+<tr>
+<td><code>n =&gt; n</code></td>
+<td><code>m =&gt; m</code></td>
+<td><code>, =&gt; ,</code></td>
+<td><code>. =&gt; .</code></td>
+<td><code>/ =&gt; /</code></td>
+</tr>
+<tr>
+<td><code>78 =&gt; 5</code></td>
+<td><code>79 =&gt; 4</code></td>
+<td><code>89 =&gt; 3</code></td>
+<td><code>08 =&gt; 2</code></td>
+<td><code>09 =&gt; 1</code></td>
+</tr>
+<tr>
+<td><code>ui =&gt; t</code></td>
+<td><code>uo =&gt; r</code></td>
+<td><code>io =&gt; e</code></td>
+<td><code>pi =&gt; w</code></td>
+<td><code>po =&gt; q</code></td>
+</tr>
+<tr>
+<td><code>jk =&gt; g</code></td>
+<td><code>jl =&gt; f</code></td>
+<td><code>kl =&gt; d</code></td>
+<td><code>;k =&gt; s</code></td>
+<td><code>;l =&gt; a</code></td>
+</tr>
+<tr>
+<td><code>m, =&gt; b</code></td>
+<td><code>m. =&gt; v</code></td>
+<td><code>,. =&gt; c</code></td>
+<td><code>/, =&gt; x</code></td>
+<td><code>/. =&gt; z</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="来点例子">来点例子：</h2>
+<p>英文：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dfio</code>=&gt;<code>he</code></td>
+<td><code>adl</code>=&gt;<code>ll</code></td>
+<td><code>qe, </code>=&gt;<code>o, </code></td>
+<td><code>wo</code>=&gt;<code>wo</code></td>
+<td><code>rl</code>=&gt;<code>rl</code></td>
+<td><code>d.</code>=&gt;<code>d.</code></td>
+</tr>
+</tbody>
+</table>
+<p>=&gt; <code>hello, world.</code></p>
+<p>微软双拼：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>并击</td>
+<td><code>wo</code></td>
+<td><code>sdio</code></td>
+<td><code>eri</code></td>
+<td><code>q;</code></td>
+<td><code>cvi</code></td>
+<td><code>wei</code></td>
+<td><code>cvi</code></td>
+<td><code>xi</code></td>
+<td><code>dfuo</code></td>
+<td><code>dio</code></td>
+<td><code>dl;</code></td>
+<td><code>cj</code></td>
+<td><code>,</code></td>
+<td><code>wo</code></td>
+<td><code>sdio</code></td>
+<td><code>eri</code></td>
+<td><code>qw/.</code></td>
+<td><code>cvi</code></td>
+<td><code>s.m</code></td>
+<td><code>weu</code></td>
+<td><code>wj</code></td>
+<td><code>wrip</code></td>
+<td></td>
+</tr>
+<tr>
+<td>映射</td>
+<td><code>wo</code></td>
+<td><code>ke</code></td>
+<td><code>yi</code></td>
+<td><code>q;</code></td>
+<td><code>ni</code></td>
+<td><code>ii</code></td>
+<td><code>ni</code></td>
+<td><code>xi</code></td>
+<td><code>hr</code></td>
+<td><code>de</code></td>
+<td><code>da</code></td>
+<td><code>cj</code></td>
+<td><code>,</code></td>
+<td><code>wo</code></td>
+<td><code>ke</code></td>
+<td><code>yi</code></td>
+<td><code>pz</code></td>
+<td><code>ni</code></td>
+<td><code>sv</code></td>
+<td><code>ii</code></td>
+<td><code>wj</code></td>
+<td><code>uw</code></td>
+<td><code>.</code></td>
+</tr>
+<tr>
+<td>输出</td>
+<td><code>我</code></td>
+<td><code>可</code></td>
+<td><code>以</code></td>
+<td><code>请</code></td>
+<td><code>你</code></td>
+<td><code>吃</code></td>
+<td><code>你</code></td>
+<td><code>喜</code></td>
+<td><code>欢</code></td>
+<td><code>的</code></td>
+<td><code>大</code></td>
+<td><code>餐</code></td>
+<td><code>，</code></td>
+<td><code>我</code></td>
+<td><code>可</code></td>
+<td><code>以</code></td>
+<td><code>陪</code></td>
+<td><code>你</code></td>
+<td><code>随</code></td>
+<td><code>处</code></td>
+<td><code>玩</code></td>
+<td><code>耍</code></td>
+<td><code>。</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="尝试与练习">尝试与练习：</h2>
+<p>在此输入：</p>
+<div class="snochorded">
+<div><textarea  style="min-width:50%;min-height:10em"></textarea></div>
+当前按下：<span></span>
+</div>
+<h2 id="软件下载">软件下载</h2>
+<p>见： <a href="https://github.com/snomiao/snochorded/">https://github.com/snomiao/snochorded/</a></p>
+<script>
+// 规则转换函
+const 按长度倒序 = (a, b) => b.length - a.length
+const 串字符按顺序排序 = (串) => 串.split('').sort().join('')
+const 规则向表解析 = (输入规则串, 输出规则串) => {
+    const [输入列, 输出列] = [输入规则串, 输出规则串].map(串 => 串.split(' '))
+    const 对应关系列 = 输入列.map((输入, 序) => [串字符按顺序排序(输入), 输出列[序]])
+    const 对应关系 = Object.fromEntries(对应关系列)
+    return 对应关系
+}
+const 规则表转换 = (规则, 原字符串, 新字符串) => JSON.parse(JSON.stringify(规则).replace(/\d/g, (字符) => 新字符串[原字符串.indexOf(字符)]))
+// 插空法
+const 全排列 = (串) =>
+    串.length <= 1
+        ? [串]
+        : 串.split('').flatMap((字, 序) =>
+            全排列(串.slice(0, 序) + 串.slice(序 + 1))
+                .map(排列串 => 字 + 排列串))
+
+// 全排列
+const 规则表全序支持 = (规则) => {
+    const 规则列 = Object.entries(规则)
+    const 全序规则列 = 规则列.flatMap(([键, 值]) => 全排列(键).map(键 => [键, 值]))
+    return Object.fromEntries(全序规则列)
+}
+const 规则表向字母区扩展 = (规则) => {
+    // `1234567890` => `qwertyuiop`
+    //                 `asdfghjkl;`
+    //                 `zxcvbnm,./`
+    return {
+        ...规则,
+        ...规则表转换(规则, `1234567890`, `qwertyuiop`),
+        ...规则表转换(规则, `1234567890`, `asdfghjkl;`),
+        ...规则表转换(规则, `1234567890`, `zxcvbnm,./`),
+    }
+}
+// 定义规则
+const 左手规则表 = 规则表全序支持(规则表向字母区扩展(规则向表解析('1 2 3 4 5 34 24 23 13 12', '1 2 3 4 5 6 7 8 9 0')))
+const 右手规则表 = 规则表全序支持(规则表向字母区扩展(规则向表解析('90 80 89 79 78 6 7 8 9 0', '1 2 3 4 5 6 7 8 9 0')))
+const 左手按键集 = new Set([...Object.keys(左手规则表)].join('').split(''))
+const 右手按键集 = new Set([...Object.keys(右手规则表)].join('').split(''))
+const 其他字符集 = new Set(" ")
+const 可退改字符列 = [...左手按键集, ...右手按键集, ...其他字符集].filter(e => /[a-z]/.test(e))
+const 直接映射集 = new Set([...左手按键集, ...右手按键集, ...其他字符集])
+const 按键重映射 = (输入) => {
+    const 输入字符列 = 输入.split('')
+    const 左手输入 = 输入字符列.filter(字 => 左手按键集.has(字)).sort().join('')
+    const 右手输入 = 输入字符列.filter(字 => 右手按键集.has(字)).sort().join('')
+    const 其他输入 = 输入字符列.filter(字 => (左手输入 + 右手输入).indexOf(字) == -1).join('')
+    const 左手输出 = 左手规则表[左手输入] || ''
+    const 右手输出 = 右手规则表[右手输入] || ''
+    return 左手输出 + 右手输出 + 其他输入
+}
+
+const 雪星并击输入区 =  document.querySelector('.snochorded textarea')
+const 雪星并击按键显示区 =  document.querySelector('.snochorded span')
+var 按下键列 = ""
+
+雪星并击输入区.addEventListener('keydown', (e)=>{
+    if(!直接映射集.has(e.key) || e.altKey || e.ctrlKey || e.shiftKey ) return;
+    e.preventDefault()
+    按下键列 += e.key
+    雪星并击按键显示区.innerText = 按下键列
+})
+雪星并击输入区.addEventListener('keyup', (e)=>{
+    if(!直接映射集.has(e.key) || e.altKey || e.ctrlKey || e.shiftKey ) return;
+    e.preventDefault()
+    雪星并击输入区.value += 按键重映射(按下键列)
+    按下键列 = ""
+    雪星并击按键显示区.innerText = "无"
+})
+雪星并击按键显示区.innerText = "无"
+
+</script>
+    </body>
+    </html>
