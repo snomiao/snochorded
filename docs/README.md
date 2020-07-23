@@ -13,7 +13,7 @@ https://snomiao.github.io/snochorded/
 软件下载：（目前支持 Windows）
 https://github.com/snomiao/snochorded/releases/
 
-## 编码规则
+## 雪星并击编码规则
 
 规则解读：`同时按下 => 输出`
 

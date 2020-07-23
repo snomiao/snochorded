@@ -1,8 +1,7 @@
 ; 雪星并击 | snochorded
-; https://docs.microsoft.com/ja-jp/windows/win32/api/winuser/nf-winuser-getkeyboardstate?redirectedfrom=MSDN
-; BOOL GetKeyboardState(
-;   PBYTE lpKeyState
-; );
+; Copyright 2020 snomiao@gmail.com
+; LICENSE - GPLv3
+; (20200722) 创建
 
 #MaxHotkeysPerInterval, 200
 ; 雪星并击规则集与分手按键表 {{

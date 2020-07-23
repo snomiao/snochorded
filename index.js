@@ -1,4 +1,6 @@
 // 雪星并击 | snochorded
+// Copyright 2020 snomiao@gmail.com
+// LICENSE - GPLv3
 // (20200722) 创建
 
 // 规则转换函
