@@ -46,6 +46,7 @@ https://github.com/snomiao/snochorded/releases/
 ## 来点例子：
 
 ### 英文：`hello, world.`
+
 |||||||
 |-|-|-|-|-|-|
 | `dfio`=>`he` | `adl`=>`ll` | `qe, `=>`o, ` | `wo`=>`wo` | `rl`=>`rl` | `d.`=>`d.`
