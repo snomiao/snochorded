@@ -2,14 +2,16 @@
 
 ## 链接
 
-源码：
-https://github.com/snomiao/snochorded/
+并击介绍：[https://lab.snomiao.com/SNOLAB-4807#并击输入是什么？它与五笔、拼音有何异同？](https://lab.snomiao.com/SNOLAB-4807#%E5%B9%B6%E5%87%BB%E8%BE%93%E5%85%A5%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%AE%83%E4%B8%8E%E4%BA%94%E7%AC%94%E3%80%81%E6%8B%BC%E9%9F%B3%E6%9C%89%E4%BD%95%E5%BC%82%E5%90%8C%EF%BC%9F)
 
 在线体验：
-https://snomiao.github.io/snochorded/
+[https://snomiao.github.io/snochorded/](https://snomiao.github.io/snochorded/)
 
 软件下载：（目前支持 Windows）
-https://github.com/snomiao/snochorded/releases/
+[https://github.com/snomiao/snochorded/releases/](https://github.com/snomiao/snochorded/releases/)
+
+本项目源码：
+[https://github.com/snomiao/snochorded/](https://github.com/snomiao/snochorded/)
 
 ## 编码规则
 
